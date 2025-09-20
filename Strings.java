@@ -14,6 +14,19 @@ public class Strings {
         String str3 = str1 + " " + str2;
         System.out.println("Concatenated String: " + str3);
 
+        // String comparison
+        //the difference between '==' and 'equals()' method in Java is that '==' checks for reference equality (whether both references point to the same object in memory), while 'equals()' checks for value equality (whether the contents of the objects are the same).
+        // '==' checks if both references point to the same object
+        // 'equals()' checks if the contents of the strings are the same
+        // Example to demonstrate the difference
+        String s1 = "Hello";
+        String s2 = "Hello";
+        String s3 = new String("Hello");
+
+        System.out.println(s1 == s2); // true (same reference in SCP)
+        System.out.println(s1 == s3); // false (different object in heap)
+        System.out.println(s1.equals(s3)); // true (content is same)
+
         // String methods
         System.out.println("Length of str1: " + str1.length());
         System.out.println("Character at index 7 of str1: " + str1.charAt(7));
