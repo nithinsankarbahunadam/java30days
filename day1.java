@@ -21,5 +21,26 @@ public class day1 {
         System.out.println("Double: " + d);
         System.out.println("Char: " + c);
         System.out.println("Boolean: " + bool);
+
+        //non-premitive data types
+        String str = "Hello, Java!";
+        System.out.println("String: " + str);
+
+        //type casting
+        int num = 100;
+        double convertedNum = num; // implicit casting
+        System.out.println("Converted double: " + convertedNum);
+        double num2 = 99.99;
+        int convertedNum2 = (int) num2; // explicit casting
+        System.out.println("Converted int: " + convertedNum2);
+
+        //upcasting and downcasting
+        int intVal = 500;
+        long longVal = intVal; // upcasting
+        System.out.println("Upcasted long: " + longVal);
+        long longVal2 = 1000L;
+        int intVal2 = (int) longVal2; // downcasting
+        System.out.println("Downcasted int: " + intVal2);
+
     }
 }
